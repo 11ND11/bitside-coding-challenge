@@ -65,7 +65,19 @@ export const promotionsData = [
 - Built with TypeScript and compiled to ES2017
 - Uses Bootstrap 5 for styling (loaded via CDN)
 - No server required - runs directly in the browser
-- Modular architecture with clear separation of concerns
+- Modular architecture with clear separation of components
+
+The application follows a clear separation between models and services:
+- **Models**: Define the core data structures and business rules (e.g., Basket, Promotion).
+  They are independent of the application's technical implementation.
+- **Services**: Handle the application logic and coordinate between different models.
+  They encapsulate specific functionality like inventory management or promotion calculations.
+
+This separation provides:
+- Better maintainability through clear responsibilities
+- Easier testing as models and services can be tested independently
+- Improved reusability of components
+- Simplified future modifications or extensions
 
 ### Future Improvements and Notes
 
@@ -92,3 +104,4 @@ This is a proof of concept and not intended for production use. Several improvem
 
 #### Maintenance
 - add comments and expand technical documentation
+- use specific coding guidelines
