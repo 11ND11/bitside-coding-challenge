@@ -148,7 +148,7 @@ class ShoppingApp {
     }
 }
 
-// Global verfügbar machen für onclick Handler
+// Make globally available for onclick handlers
 declare global {
     interface Window {
         app: ShoppingApp;

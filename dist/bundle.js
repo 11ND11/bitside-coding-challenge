@@ -67,7 +67,7 @@
           case "tenPercentOff" /* TenPercentOff */:
             return new TenPercentOffPromotion(promo.sku, "tenPercentOff" /* TenPercentOff */);
           default:
-            throw new Error(`Unbekannter Promotionstyp: ${promo.type}`);
+            throw new Error(`Unknown promotion type: ${promo.type}`);
         }
       });
     }
